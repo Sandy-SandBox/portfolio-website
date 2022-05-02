@@ -1,0 +1,142 @@
+/*****************************/
+/* Smartphone < 300px */
+/*****************************/
+@media(max-width:20em) {
+  html {
+    font-size: 53%;
+  }
+  .container {
+    width: min(90rem,95%);
+  }
+  .cta-section .container {
+    padding: 4rem 3rem;
+  }
+}
+
+/*****************************/
+/* Tablets > 768px */
+/*****************************/
+@media(min-width:48em) {
+  .nav {
+    width: 45vw;
+  }
+  .hero {
+    padding: 5rem 0;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5rem;
+  }
+  .services-section .grid--3-cols {
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+    grid-column-gap: 3rem;
+  }
+
+  .portfolio-section .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+  }
+  .cta-section .container {
+    padding: 10rem 5rem;
+  }
+  .owl-dots {
+    bottom: -25%;
+  }
+  .blog-title {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .contact-section .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .contact-box {
+    padding: 2.5rem 1.5rem;
+    padding-bottom: 3rem;
+  }
+  .contact-box-link {
+    line-height: 1.6;
+  }
+  .hero.active::before {
+  -webkit-clip-path: circle(10% at 50% 25%);
+          clip-path: circle(10% at 50% 25%);
+}
+}
+
+/*****************************/
+/* Laptops > 924px */
+/*****************************/
+
+@media(min-width:57.75em) {
+  .container {
+    width: min(80rem,90%);
+  }
+  .nav {
+    width: 30vw;
+  }
+  .hero .container {
+    padding: 0 10rem;
+  }
+  .cta-section .container {
+    width: min(95%,100rem);
+  }
+  .about-section .grid--2-cols {
+    grid-column-gap: 6rem;
+  }
+  .about-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .portfolio-section .grid--3-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .skill-section .grid {
+    grid-gap: 5rem;
+  }
+  .blog-section .grid {
+    grid-gap: 4rem;
+  }
+  .services-section .grid {
+    grid-row-gap: 4rem;
+    grid-auto-rows: auto;
+    justify-content: center;
+  }
+  .contact-title {
+    text-align: center;
+    margin-bottom: 4.5rem;
+  }
+  .contact-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .contact-link {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  .contact-link:last-child {
+    margin-bottom: 3rem;
+  }
+  .hero.active::before {
+  -webkit-clip-path: circle(8% at 50% 24%);
+          clip-path: circle(8% at 50% 24%);
+}
+
+}
+
+/*****************************/
+/* Computers > 1200px */
+/*****************************/
+@media(min-width:71em) {
+  .services-section .grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
